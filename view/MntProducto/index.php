@@ -35,7 +35,6 @@
     <link href="../../public/lib/Ionicons/css/ionicons.css" rel="stylesheet">
     <link href="../../public/lib/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet">
     <link href="../../public/lib/jquery-switchbutton/jquery.switchButton.css" rel="stylesheet">
-
     <link href="../../public/lib/datatables/jquery.dataTables.css" rel="stylesheet">
 
     <!-- Bracket CSS -->
@@ -49,7 +48,7 @@
     <div class="br-sideleft overflow-y-auto">
       <label class="sidebar-label pd-x-15 mg-t-20">Navegación</label>
       <div class="br-sideleft-menu">
-        
+
         <a href="../../index.php" class="br-menu-link">
           <div class="br-menu-item">
             <i class="menu-item-icon icon ion-ios-home-outline tx-22"></i>
@@ -71,7 +70,7 @@
 
       </div><!-- br-sideleft-menu -->
 
-      <label class="sidebar-label pd-x-15 mg-t-25 mg-b-20 tx-info op-9">Sistema Ventas UniNorte</label>
+      <label class="sidebar-label pd-x-15 mg-t-25 mg-b-20 tx-info op-9">SISTEMA VENTAS UNINORTE</label>
 
       <div class="info-list">
         <div class="d-flex align-items-center justify-content-between pd-x-15">
@@ -708,21 +707,20 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Agua Mineral 2l</td>
-                  <td><a href="#" class="btn btn-primary">Editar</a></td>
-                  <td><a href="#" class="btn btn-danger">Eliminar</a></td>
+                  <td>Agua Mineral 2L</td>
+                  <td><button class="btn btn-primary">Editar</button></td>
+                  <td><button class="btn btn-danger">Eliminar</button></td>
                 </tr>
                 <tr>
-                  <td>Coca Cola 3l</td>
-                  <td><a href="#" class="btn btn-primary">Editar</a></td>
-                  <td><a href="#" class="btn btn-danger">Eliminar</a></td>
+                  <td>Gaseosa Coca Cola Descartable 3L</td>
+                  <td><button class="btn btn-primary">Editar</button></td>
+                  <td><button class="btn btn-danger">Eliminar</button></td>
                 </tr>
               </tbody>
             </table>
           </div><!-- table-wrapper -->
 
         </div><!-- br-section-wrapper -->
-
       </div><!-- br-pagebody -->
 
     </div><!-- br-mainpanel -->
@@ -736,13 +734,12 @@
     <script src="../../public/lib/jquery-ui/jquery-ui.js"></script>
     <script src="../../public/lib/jquery-switchbutton/jquery.switchButton.js"></script>
     <script src="../../public/lib/peity/jquery.peity.js"></script>
-
     <script src="../../public/lib/datatables/jquery.dataTables.js"></script>
     <script src="../../public/lib/datatables-responsive/dataTables.responsive.js"></script>
 
     <script src="../../public/js/bracket.js"></script>
 
-    <script> src="mntProducto.js"</script> 
-    
+    <script src="mntProducto.js"></script>
+
   </body>
 </html>
