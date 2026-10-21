@@ -693,8 +693,9 @@
       <div class="br-pagebody">
 
         <div class="br-section-wrapper">
-          <h6 class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">Basic Responsive DataTable</h6>
-          <p class="mg-b-25 mg-lg-b-50">Searching, ordering and paging goodness will be immediately added to the table, as shown in this example.</p>
+          <h6 class="tx-gray-800 tx-uppercase tx-bold tx-14 mg-b-10">MANTENIMIENTO PRODUCTO</h6>
+          
+          <button id="btnNuevo" class="btn btn-outline-primary btn-block mg-b-10">Nuevo Registro</button>
 
           <div class="table-wrapper">
             <table id="producto_data" class="table display responsive nowrap">
@@ -726,6 +727,8 @@
     </div><!-- br-mainpanel -->
     <!-- ########## END: MAIN PANEL ########## -->
 
+    <?php require_once("modalmantenimiento.php") ?>
+
     <script src="../../public/lib/jquery/jquery.js"></script>
     <script src="../../public/lib/popper.js/popper.js"></script>
     <script src="../../public/lib/bootstrap/bootstrap.js"></script>
@@ -739,6 +742,8 @@
 
     <script src="../../public/js/bracket.js"></script>
 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    
     <script src="mntProducto.js"></script>
 
   </body>
