@@ -743,7 +743,7 @@
     <script src="../../public/js/bracket.js"></script>
 
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    
+    <script src="../../public/js/sweetalert2.all.min.js"></script>
     <script src="mntProducto.js"></script>
 
   </body>
