@@ -89,12 +89,13 @@ function guardaryeditar(e){
 }
 
 function editar(prod_id){
-    console.log("editar" + prod_id);
-     $("#producto_form")[0].reset();
-    $(".modal-header").css("background-color", "#28a745");
-    $(".modal-header").css("color", "white");
-    $("#mdltitulo").text("Editar Registro");
-    $("#modalmantenimiento").modal("show");
+    $.post("../../controller/producto.php?op=mostrar",{prod_id:prod_id},function (data) {
+        data = JSON.parse(data);
+        $('#prod_id').val(data.prod_id);
+        $('#prod_nom').val(data.prod_nom);
+    });
+    $('#mdltitulo').html('Editar Registro');
+    $('#modalmantenimiento').modal('show');
 }
 
 function eliminar(prod_id){
@@ -127,9 +128,11 @@ function eliminar(prod_id){
 
 $(document).on("click", "#btnNuevo", function(){
     $("#producto_form")[0].reset();
+    $("#prod_id").val("");
     $(".modal-header").css("background-color", "#28a745");
     $(".modal-header").css("color", "white");
     $("#mdltitulo").text("Nuevo Registro");
     $("#modalmantenimiento").modal("show");
+   
 });
 init();

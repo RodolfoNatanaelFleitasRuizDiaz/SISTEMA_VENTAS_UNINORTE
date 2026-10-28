@@ -42,17 +42,19 @@ switch ($_GET["op"]) {
         }else{
             $producto->update_producto($_POST["prod_id"],$_POST["prod_nom"]);
         }
+        
         break;
 
-    case "mostrar":
-        $datos=$producto->get_producto_x_id($_POST["prod_id"]);
-        if(is_array($datos)==true and count($datos)>0){
-            foreach($datos as $row){
-                $output["prod_id"] = $row["prod_id"];
-                $output["prod_nom"] = $row["prod_nom"];
+   case "mostrar":
+            $datos=$producto->get_producto_x_id($_POST["prod_id"]);
+            if(is_array($datos)==true and count($datos)>0){
+                foreach($datos as $row){
+                    $output["prod_id"] = $row["prod_id"];
+                    $output["prod_nom"] = $row["prod_nom"];
+                }
             }
-        }
-        break;
+            echo json_encode($output);
+            break;
 
     case "eliminar":
         $producto->delete_producto($_POST["prod_id"]);
