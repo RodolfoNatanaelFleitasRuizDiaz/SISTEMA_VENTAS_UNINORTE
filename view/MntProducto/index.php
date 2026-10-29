@@ -1,3 +1,13 @@
+<?php
+session_start();
+
+// Si no hay sesión, redirigir al login
+if(!isset($_SESSION["usu_id"])){
+    header("Location: /SISTEMA_VENTAS_UNINORTE/login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -65,7 +75,8 @@
         </a><!-- br-menu-link -->
 
         <ul class="br-menu-sub nav flex-column">
-          <li class="nav-item"><a href="accordion.html" class="nav-link">Productos</a></li>
+          <li class="nav-item"><a href="index.php" class="nav-link">Productos</a></li>
+          <li class="nav-item"><a href="../MntUsuario/index.php" class="nav-link">Usuarios</a></li>
         </ul>
 
       </div><!-- br-sideleft-menu -->
@@ -254,7 +265,7 @@
           </div><!-- dropdown -->
           <div class="dropdown">
             <a href="" class="nav-link nav-link-profile" data-toggle="dropdown">
-              <span class="logged-name hidden-md-down">Katherine</span>
+             <span class="logged-name hidden-md-down"><?php echo $_SESSION["usu_nom"]; ?></span>
               <img src="http://via.placeholder.com/64x64" class="wd-32 rounded-circle" alt="">
               <span class="square-10 bg-success"></span>
             </a>
